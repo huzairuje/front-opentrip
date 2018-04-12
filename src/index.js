@@ -17,6 +17,7 @@ import cyan from 'material-ui/colors/cyan';
 import Home from './containers/home';
 import Login from './containers/login';
 import CreateTrip from './containers/create_trip';
+import Register from './containers/register';
 
 import { AUTHENTICATED } from './actions'
 
@@ -68,6 +69,7 @@ ReactDOM.render(
                     <Switch>
                         <Route exact path="/create_trip" component={CreateTrip} />
                         <Route exact path="/" component={Home} />
+                        <Route exact path="/register" component={Register} />
                     </Switch>
                 </div>
             </BrowserRouter>

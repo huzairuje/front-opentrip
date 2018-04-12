@@ -19,6 +19,8 @@ import Button from 'material-ui/Button';
 import IconButton from 'material-ui/IconButton';
 import Input, { InputLabel, InputAdornment } from 'material-ui/Input';
 import { FormControl, FormHelperText } from 'material-ui/Form';
+import { Link } from "react-router-dom";
+
 
 import EmailTextField from '../../components/email-textfield';
 
@@ -238,7 +240,25 @@ class Login extends Component {
                             className="text-center"
                             style={{ marginBottom: "1rem" }}>
                             <span style={{ width: "100%", textAlign: "center" }}>
-                                Belum memiliki akun? <a href="#" style={{ color: "#009688", }}>Daftar</a>
+                                Belum memiliki akun? 
+                                <Link to="/register" style={{
+                                    textDecoration: "none"
+                                }}>
+                                    <Button
+                                        raised
+                                        color="secondary"
+                                        size="medium"
+                                        style={{
+                                            outline: "none",
+                                            textTransform: "capitalize",
+                                            fontSize: 16,
+                                            borderRadius: 5,
+                                            fontFamily: "Rubik-Reguler"
+                                        }}>
+                                        Daftar
+                                    </Button>
+                                </Link>
+                                    
                             </span>
                         </div>
                     </div>
